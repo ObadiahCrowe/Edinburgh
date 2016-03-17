@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Cleaning 'out' dir"
-rm -r out
+echo "Cleaning 'build' dir"
 rm -r build
 echo "Done!"

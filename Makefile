@@ -7,32 +7,35 @@ grub_cfg := kernel/arch/$(arch)/grub.cfg
 assembly_source_files := $(wildcard kernel/arch/$(arch)/*.asm)
 assembly_object_files := $(patsubst kernel/arch/$(arch)/%.asm, \
 	build/arch/$(arch)/%.o, $(assembly_source_files))
+c_sources = $(wildcard kernel/arch/$(arch)/*.c)
+c_headers = $(wildcard kernel/arch/$(arch)/*.h)
+obj = ${c_sources:.c=.o} 
 
-.PHONY: all clean run iso
+CC = /home/obadiah/Documents/OSDev/crosscompiler/bin/x86_64-elf-gcc
+GDB = /home/obadiah/Documents/OSDev/crosscompiler/bin/x86_64-elf-gdb
+CFLAGS = "-ffreestanding -mcmodel=large -mno-red-zone -mno-mmx -mno-sse -mno-sse2 -c"
 
-all: $(kernel)
+.PHONY: run edinburgh
 
-clean:
-	@rm -r build
-
-run: $(iso)
-	@qemu-system-x86_64 -cdrom $(iso)
-
-iso: $(iso)
-
-$(iso): $(ckernel) $(kernel) $(grub_cfg)
+edinburgh: $(build/arch/$(arch)/%.o)
+	@$(%.o)
+	@$(%.bin)
+	@$(build/arch/$(arch)/%.o)
+	@ld -n -T $(linker_script) -o $(kernel) $(assembly_object_files) kernel/arch/$(arch)/kernel.o
+	ld -n --gc-sections -T $(linker_script) -o $(kernel) $(assembly_object_files) $(c_sources) $(c_headers) $(obj)
 	@mkdir -p build/isofiles/boot/grub
 	@cp $(kernel) build/isofiles/boot/kernel.bin
 	@cp $(grub_cfg) build/isofiles/boot/grub
 	@grub-mkrescue -o $(iso) build/isofiles
 
-$(ckernel):
-	@/home/obadiah/Documents/OSDev/Edinburgh64/crosscompiler/bin/x86_64-elf-gcc -ffreestanding -mcmodel=large -mno-red-zone -mno-mmx -mno-sse -mno-sse2 -c kernel.c -o kernel.o
+run: $(iso)
+	@qemu-system-x86_64 -cdrom $(iso)
 
-$(kernel): $(assembly_object_files) $(linker_script)
-	@ld -n -T $(linker_script) -o $(kernel) $(assembly_object_files) kernel/arch/$(arch)/kernel.o
+kernel/arch/$(arch)/%.o: %.c ${HEADERS}
+	${CC} ${CFLAGS} -c $< -o $@
 
-# compile assembly files
-build/arch/$(arch)/%.o: kernel/arch/$(arch)/%.asm
-	@mkdir -p $(shell dirname $@)
-	@nasm -felf64 $< -o $@
+kernel/arch/$(arch)/%.o: %.asm
+	nasm $< -f elf -o $@
+
+kernel/arch/$(arch)/%.bin: %.asm
+	nasm $< -f bin -o $@
