@@ -12,5 +12,5 @@ echo "Commiting all files.."
 git commit -m "$commitMsg"
 
 echo "Pushing new changes.."
-git push -m origin master
+git push -u origin master
 echo "Done!"
