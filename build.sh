@@ -13,9 +13,11 @@ echo "Creating kernel objects.."
 nasm -felf64 kernel/arch/x86_64/boot.asm -o build/arch/x86_64/boot.o
 nasm -felf64 kernel/arch/x86_64/long_mode_init.asm -o build/arch/x86_64/long_mode_init.o
 nasm -felf64 kernel/arch/x86_64/multiboot_header.asm -o build/arch/x86_64/multiboot_header.o
+
 #Link kernel
 echo "Linking kernel"
 ld -n -o build/kernel.bin -T kernel/arch/x86_64/linker.ld build/arch/x86_64/boot.o build/arch/x86_64/long_mode_init.o build/arch/x86_64/multiboot_header.o build/arch/x86_64/kernel.o
+
 #Make ISO building dirs
 echo "Building ISO"
 mkdir -p build/isofiles/boot/grub
