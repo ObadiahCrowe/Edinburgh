@@ -13,14 +13,14 @@ int minCursor_X = 0;
 int minCursor_Y = 0;
 
 /* Screen size variables */
-const unint8 scrnWdth = 1300;
-const unint8 scrnHght = 700;
+const unint8 scrnWdth = 80;
+const unint8 scrnHght = 25;
 const unint8 scrnDpth = 2;
 
 /* Clear line on the screen */
-void clearLine(unint8 start, unit8 end) {
-  unint16 line = scrnWdth * start * scrnDpth;
-  string mem = (string) 0xB8000;
+void clearLine(unint8 start, unint8 end) {
+  unint16 i = scrnWdth * start * scrnDpth;
+  string mem = (string) 0xb8000;
   for(i; i < (scrnWdth * (end + 1) * scrnDpth); i++) {
     mem[i] = 0x0;
   }
@@ -45,6 +45,111 @@ void clearScreen() {
   minCursor_X = 0;
   minCursor_Y = 0;
   updateCursor();
+}
+
+void scrollUp(unint8 lineNum) {
+	string mem = (string) 0xb8000;
+	unint16 i = 0;
+	for (i; i < scrnWdth * (scrnHght - 1) * scrnDpth; i++) {
+		mem[i] = mem[i + scrnHght * scrnDpth * lineNum];
+	}
+	clearLine(scrnHght - 1 - lineNum, scrnHght - 1);
+	if (cursor_Y - lineNum < 0) {
+		cursor_Y = 0;
+		cursor_X = 0;
+	} else {
+		cursor_Y -= lineNum;
+	}
+	updateCursor();
+}
+
+void checkNewLine() {
+	if (cursor_Y >= scrnHght - 1) {
+		scrollUp(1);
+	}
+	minCursor_Y = cursor_Y;
+}
+
+void printChar(char ch) {
+	string mem = (string) 0xb8000;
+	switch (ch) {
+		case (0x08):
+			if (cursor_X > 0) {
+				cursor_X--;
+				mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth] = 0x00;
+			}
+			break;
+		case (0x09):
+			cursor_X = (cursor_X + 8) & ~ (8 - 1);
+			break;
+		case ('\r'):
+			cursor_X = 0;
+			break;
+		case ('\n'):
+			cursor_X = 0;
+			cursor_Y++;
+			break;
+		default:
+			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth] = ch;
+			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth + 1] = BLACK_LIGHT_WHITE;
+			cursor_X++;
+			break;
+	}
+	if (cursor_X >= scrnWdth) {
+		cursor_X = 0;
+		cursor_Y++;
+	}
+	checkNewLine();
+	updateCursor();
+}
+
+void printCharColour(char ch, color col) {
+	string mem = (string) 0xb8000;
+	switch (ch) {
+		case (0x08):
+			if (cursor_X > 0) {
+				cursor_X--;
+				mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth] = 0x00;
+			}
+			break;
+		case (0x09):
+			cursor_X = (cursor_X + 8) & ~ (8 - 1);
+			break;
+		case ('\r'):
+			cursor_X = 0;
+			break;
+		case ('\n'):
+			cursor_X = 0;
+			cursor_Y++;
+			break;
+		default:
+			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth] = ch;
+			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth + 1] = col;
+			cursor_X++;
+			break;
+	}
+	if (cursor_X >= scrnWdth) {
+		cursor_X = 0;
+		cursor_Y++;
+	}
+	checkNewLine();
+	updateCursor();
+}
+
+void print(string s) {
+	unint16 i = 0;
+	unint8 len = stringLength(s);
+	for (i; i < len; i++) {
+		printChar(s[i]);
+	}
+}
+
+void printColour(string s, color col) {
+	unint16 i = 0;
+	unint8 len = stringLength(s);
+	for (i; i < len; i++) {
+		printCharColour(s[i], col);
+	}
 }
 
 #endif
