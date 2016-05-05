@@ -13,8 +13,8 @@ void write_string( int colour, const char *string )
     }
 }
 
-unint64 stringLength(string s) {
-	unint64 i = 1;
+unint16 stringLength(string s) {
+	unint16 i = 1;
 	while (s[i++]);
 	return --i;
 }

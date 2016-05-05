@@ -1,7 +1,6 @@
 #include "../../../lib/string.h"
 #include "../../../lib/types.h"
 #include "../../drivers/keyboard.h"
-#include "../../drivers/power.h"
 #include "../../drivers/video/video.h"
 #include "../../drivers/video/colours.h"
 #include "../../../software/commandline.h"
@@ -19,6 +18,7 @@ void kernel_main(void)
 		printColour(" ", BLACK_GREY);
 		minCursor_X = cursor_X;
 		minCursor_Y = cursor_Y;
-		startCommandLine(readString());
+		string str = readString();
+		startCommandLine(str);
 	}
 }

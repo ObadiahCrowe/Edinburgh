@@ -5,10 +5,12 @@
 #include "video/video.h"
 #include "../../lib/types.h"
 
+//string buffstr = '\0'; - to clear buffer
+string buffstr;
+
 string readString() {
 	char buff;
-	string buffstr = '\0';
-	unint64 i = 0;
+	unint32 i = 0;
 	bool reading = true;
 	while (reading && i < 32) {
 		if (inPortB(0x64) & 0x1) {
@@ -159,7 +161,7 @@ string readString() {
 					break;
 				case 28:
 					// printChar('\n');
-					// buffstr[i] = '\n';
+					//buffstr[i] = '\n';
 					i++;
 					reading = false;
 					break;
