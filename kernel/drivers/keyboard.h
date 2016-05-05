@@ -5,10 +5,10 @@
 #include "video/video.h"
 #include "../../lib/types.h"
 
-string readstr() {
+string readString() {
 	char buff;
-	string buffstr;
-	unint8 i = 0;
+	string buffstr = '\0';
+	unint64 i = 0;
 	bool reading = true;
 	while (reading && i < 32) {
 		if (inPortB(0x64) & 0x1) {
@@ -316,6 +316,12 @@ string readstr() {
 	}
 	buffstr[i] = 0;
 	if (i < 33) {
+		/*char retBuffer[i++];
+		int j = 0;
+		for(j = 0; j < i; j++) {
+			retBuffer[j] = buffstr[i];
+		}
+		buffstr = '\0';*/
 		return buffstr;
 	}
 }

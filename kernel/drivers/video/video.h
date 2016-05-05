@@ -13,12 +13,12 @@ int minCursor_X = 0;
 int minCursor_Y = 0;
 
 /* Screen size variables */
-const unint8 scrnWdth = 80;
-const unint8 scrnHght = 25;
-const unint8 scrnDpth = 2;
+const unint16 scrnWdth = 80;
+const unint16 scrnHght = 25;
+const unint16 scrnDpth = 2;
 
 /* Clear line on the screen */
-void clearLine(unint8 start, unint8 end) {
+void clearLine(unint16 start, unint16 end) {
   unint16 i = scrnWdth * start * scrnDpth;
   string mem = (string) 0xb8000;
   for(i; i < (scrnWdth * (end + 1) * scrnDpth); i++) {
@@ -138,15 +138,15 @@ void printCharColour(char ch, color col) {
 
 void print(string s) {
 	unint16 i = 0;
-	unint8 len = stringLength(s);
+	unint16 len = stringLength(s);
 	for (i; i < len; i++) {
 		printChar(s[i]);
 	}
 }
 
 void printColour(string s, color col) {
-	unint16 i = 0;
-	unint8 len = stringLength(s);
+	unint64 i = 0;
+	unint64 len = stringLength(s);
 	for (i; i < len; i++) {
 		printCharColour(s[i], col);
 	}
