@@ -1,5 +1,9 @@
 #!/bin/bash
 echo "Building Edinburgh-x86-64"
+
+#Clear build dir
+echo "Clearing temp build files.."
+rm -r build
 #Make build dir
 if [ ! -d build/arch/x86_64 ];
 then
