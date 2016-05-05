@@ -3,7 +3,6 @@
 
 #include "../../../lib/string.h"
 #include "colours.h"
-#include "../../system/syscalls.h"
 #include "../../../lib/types.h"
 
 /* Cursor variables */
@@ -19,32 +18,32 @@ const unint16 scrnDpth = 2;
 
 /* Clear line on the screen */
 void clearLine(unint16 start, unint16 end) {
-  unint16 i = scrnWdth * start * scrnDpth;
-  string mem = (string) 0xb8000;
-  for(i; i < (scrnWdth * (end + 1) * scrnDpth); i++) {
-    mem[i] = 0x0;
-  }
+	unint16 i = scrnWdth * start * scrnDpth;
+	string mem = (string) 0xb8000;
+	for(i; i < (scrnWdth * (end + 1) * scrnDpth); i++) {
+		mem[i] = 0x0;
+	}
 }
 
 /* Update blinking cursor / cursor location */
 void updateCursor() {
-  unsigned position;
-  position = cursor_Y * scrnWdth + cursor_X;
+	unsigned position;
+	position = cursor_Y * scrnWdth + cursor_X;
 
-  outPortB(0x3D4, 14);
-  outPortB(0x3D5, position >> 8);
-  outPortB(0x3D4, 15);
-  outPortB(0x3D5, position);
+	outPortB(0x3D4, 14);
+	outPortB(0x3D5, position >> 8);
+	outPortB(0x3D4, 15);
+	outPortB(0x3D5, position);
 }
 
 /* Clears the whole screen */
 void clearScreen() {
-  clearLine(0, scrnHght - 1);
-  cursor_X = 0;
-  cursor_Y = 0;
-  minCursor_X = 0;
-  minCursor_Y = 0;
-  updateCursor();
+	clearLine(0, scrnHght - 1);
+	cursor_X = 0;
+	cursor_Y = 0;
+	minCursor_X = 0;
+	minCursor_Y = 0;
+	updateCursor();
 }
 
 void scrollUp(unint8 lineNum) {

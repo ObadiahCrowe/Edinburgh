@@ -2,6 +2,7 @@
 #define POWER_H
 
 #include "../../lib/types.h"
+#include "../../lib/syscalls.h"
 
 void killCPU()
 {
