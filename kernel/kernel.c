@@ -11,11 +11,13 @@ void kernel_main(void)
 	printColour("Programmed by Obadiah Crowe", BLACK_GREEN);
 	printColour("\n\nCommand Line has been initialised!", BLACK_GREY);
 	while(true) {
-		printColour("\n>", BLACK_LIGHT_RED);
-		printColour(" ", BLACK_GREY);
+		string str;
+		//printColour("\n>", BLACK_LIGHT_RED);
+		//printColour(" ", BLACK_GREY);
 		minCursor_X = cursor_X;
 		minCursor_Y = cursor_Y;
-		string str = readString();
+		str = readString();
 		startCommandLine(str);
+		//str = '\0';
 	}
 }

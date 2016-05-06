@@ -3,8 +3,8 @@
 
 #include "types.h"
 
-unint16 stringLength(string s) {
-	unint16 i = 1;
+unint64 stringLength(string s) {
+	unint64 i = 1;
 	while (s[i++]);
 	return --i;
 }
@@ -21,5 +21,6 @@ bool compareString(string s1, string s2) {
 			}
 		}
 	}
+	return true;
 }
 #endif

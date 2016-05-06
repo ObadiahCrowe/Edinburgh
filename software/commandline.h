@@ -7,10 +7,27 @@
 #include "../kernel/drivers/video/video.h"
 
 void startCommandLine(string str) {
+  print("[");
+  print(str);
+  print(" + ");
+  unint64 i;
+  for(i = 0; i < stringLength(str); i++) {
+    print(".");
+  }
+  print("]\n");
   if(compareString(str, "help")) {
-    printColour("Help page", BLACK_GREY);
-  } else if(compareString(str, "helloword")) {
-    print("\nHello World");
+    printColour("\nHelp page\n", BLACK_GREY);
+    printColour("=========\n", BLACK_LIGHT_AQUA);
+
+    /* Displays help page */
+    printColour("help", BLACK_GREEN);
+    printColour(" | ", BLACK_GREY);
+    printColour("Displays this help page\n", BLACK_BLUE);
+
+    /* Displays helloworld test */
+    printColour("helloworld", BLACK_GREEN);
+    printColour(" | ", BLACK_GREY);
+    printColour("Displays hello world test output\n", BLACK_BLUE);
   } else if(compareString(str, "helloworld")) {
     print("\nHello world!");
   } else {
