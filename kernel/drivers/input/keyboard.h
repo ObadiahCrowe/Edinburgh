@@ -323,7 +323,7 @@ string readString() {
 			retBuffer[j] = buffstr[i];
 		}
 		buffstr = '\0';*/
-		return buffstr;
+		return buffstr + '\0';
 	}
 }
 #endif
