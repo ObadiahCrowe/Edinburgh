@@ -12,12 +12,11 @@ void kernel_main(void)
 	printColour("\n\nCommand Line has been initialised!", BLACK_GREY);
 	while(true) {
 		string str;
-		//printColour("\n>", BLACK_LIGHT_RED);
-		//printColour(" ", BLACK_GREY);
+		printColour("\n>", BLACK_LIGHT_RED);
+		printColour(" ", BLACK_GREY);
 		minCursor_X = cursor_X;
 		minCursor_Y = cursor_Y;
 		str = readString();
 		startCommandLine(str);
-		//str = '\0';
 	}
 }

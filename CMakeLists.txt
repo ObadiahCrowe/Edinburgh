@@ -19,7 +19,7 @@ set(SOURCE_FILES
         kernel/kernel.c
     lib/nuklear.h
     lib/string.h
-    lib/syscalls.h
+        kernel/syscalls/ports.h
     lib/types.h
     libc/arch/aarch64/bits/alltypes.h.in
     libc/arch/aarch64/bits/endian.h
@@ -4729,6 +4729,6 @@ set(SOURCE_FILES
     kernel.bin
     README.md
     run.sh
-    write.sh kernel/boot/bootstrap.c kernel/boot/boot.h kernel/boot/boot.c kernel/boot/kerneljump.c)
+    write.sh kernel/boot/bootstrap.c kernel/boot/boot.h kernel/boot/boot.c kernel/boot/kerneljump.c kernel/fault/pagefault.c kernel/fault/pagefault.c)
 
 add_executable(Edinburgh ${SOURCE_FILES})

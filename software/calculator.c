@@ -1,6 +1,6 @@
-#include <glob.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "../libc/include/glob.h"
+#include "../libc/include/stdio.h"
+#include "../libc/include/stdlib.h.h"
 #include "../lib/nuklear.h"
 
 static void

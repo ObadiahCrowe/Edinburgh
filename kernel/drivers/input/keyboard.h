@@ -2,7 +2,7 @@
 #define KEYBOARD_H
 
 #include "../video/video.h"
-#include "../../../lib/syscalls.h"
+#include "../../syscalls/ports.h"
 
 //string buffstr = '\0'; - to clear buffer
 string buffstr;
