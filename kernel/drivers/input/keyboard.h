@@ -12,6 +12,7 @@ string readString() {
 	unint32 i = 0;
 	bool reading = true;
 	while (reading && i < 32) {
+		buffstr[i] = '\0';
 		if (inPortB(0x64) & 0x1) {
 			switch (inPortB(0x60)) {
 				/* Escape button
@@ -323,7 +324,7 @@ string readString() {
 			retBuffer[j] = buffstr[i];
 		}
 		buffstr = '\0';*/
-		return buffstr;
+		return buffstr + '\0';
 	}
 }
 #endif
