@@ -60,6 +60,7 @@ void startCommandLine(string str) {
         printColour("Add C++ support\n", BLACK_GREEN);
         printColour("Add network drivers\n", BLACK_GREEN);
         printColour("Paging system", BLACK_GREEN);
+        printColour("VESA support", BLACK_GREEN);
     } else if(compareString(str, "gfxtest")) {
         printColour("\nThis is a work in progress and isn't fully fleshed out\n", BLACK_LIGHT_RED);
         printGfxTest();

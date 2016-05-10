@@ -13,8 +13,11 @@ void kernel_main(void)
 	printColour("\n\nCommand Line has been initialised!", BLACK_GREY);
 	listDisks();
 	while(true) {
-		printColour("\n>", BLACK_LIGHT_RED);
-		printColour(" ", BLACK_GREY);
+        printColour("\n[", BLACK_WHITE);
+        printColour("Edinburgh", BLACK_LIGHT_BLUE);
+        printColour(" v0.0.2", BLACK_LIGHT_GREY);
+        printColour("]", BLACK_WHITE);
+        printColour("\n$ ", BLACK_LIGHT_GREEN);
 		minCursor_X = cursor_X;
 		minCursor_Y = cursor_Y;
 		startCommandLine(readString());
