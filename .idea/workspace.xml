@@ -36,15 +36,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1c79a0e-b862-4cc7-bdf4-a0ea6af64281" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kernel/drivers/pci/pci.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edinburgh-x86_64.iso" afterPath="$PROJECT_DIR$/Edinburgh-x86_64.iso" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/isofiles/boot/kernel.bin" afterPath="$PROJECT_DIR$/build/isofiles/boot/kernel.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kernel.bin" afterPath="$PROJECT_DIR$/build/kernel.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kernel.o" afterPath="$PROJECT_DIR$/build/kernel.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/drivers/video/colours.h" afterPath="$PROJECT_DIR$/kernel/drivers/video/colours.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/kernel.c" afterPath="$PROJECT_DIR$/kernel/kernel.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/commandline.h" afterPath="$PROJECT_DIR$/software/commandline.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/drivers/pci/pci.asm" afterPath="$PROJECT_DIR$/kernel/drivers/pci/pci.asm" />
     </list>
     <ignored path="Edinburgh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +73,7 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
+            <state relative-caret-position="85140">
               <caret line="4730" column="77" selection-start-line="4730" selection-start-column="77" selection-end-line="4730" selection-end-column="77" />
               <folding />
             </state>
@@ -90,8 +83,8 @@
       <file leaf-file-name="pci.asm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kernel/drivers/pci/pci.asm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="378">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -100,7 +93,7 @@
       <file leaf-file-name="keyboard.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kernel/drivers/input/keyboard.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4913">
+            <state relative-caret-position="432">
               <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="e#39#72#0" expanded="true" />
@@ -112,7 +105,7 @@
       <file leaf-file-name="commandline.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/software/commandline.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
+            <state relative-caret-position="1116">
               <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
               <folding />
             </state>
@@ -122,7 +115,7 @@
       <file leaf-file-name="power.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kernel/drivers/power.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="108">
               <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding />
             </state>
@@ -132,7 +125,7 @@
       <file leaf-file-name="video.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kernel/drivers/video/video.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="1674">
               <caret line="93" column="83" selection-start-line="93" selection-start-column="83" selection-end-line="93" selection-end-column="83" />
               <folding>
                 <element signature="e#35#67#0" expanded="true" />
@@ -217,9 +210,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-2" />
-    <option name="y" value="18" />
+    <option name="y" value="-2" />
     <option name="width" value="1370" />
-    <option name="height" value="752" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -618,7 +611,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="18" width="1370" height="752" extended-state="0" />
+    <frame x="-2" y="-2" width="1370" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -980,20 +973,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/kernel/drivers/filesystems/drives/drivemanager.h" />
+    <entry file="file://$PROJECT_DIR$/kernel/kernel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85140">
+          <caret line="4730" column="77" selection-start-line="4730" selection-start-column="77" selection-end-line="4730" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/drivers/pci/pci.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kernel/drivers/input/keyboard.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4913">
+        <state relative-caret-position="432">
           <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
             <element signature="e#39#72#0" expanded="true" />
@@ -1001,19 +1010,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/drivers/video/colours.h">
+    <entry file="file://$PROJECT_DIR$/software/commandline.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <marker date="1462856615501" expanded="true" signature="50:7038" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="1116">
+          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/drivers/power.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kernel/drivers/video/video.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="1674">
           <caret line="93" column="83" selection-start-line="93" selection-start-column="83" selection-end-line="93" selection-end-column="83" />
           <folding>
             <element signature="e#35#67#0" expanded="true" />
@@ -1031,53 +1046,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/software/commandline.h">
+    <entry file="file://$PROJECT_DIR$/kernel/drivers/video/colours.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/drivers/power.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/drivers/filesystems/drives/drivemanager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/kernel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="342">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1462856615501" expanded="true" signature="50:7038" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="4730" column="77" selection-start-line="4730" selection-start-column="77" selection-end-line="4730" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/drivers/pci/pci.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
