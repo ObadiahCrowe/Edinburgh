@@ -1,5 +1,8 @@
 # Edinburgh
 
+##Known bugs
+keyboard.h is unable to find the printChar method
+
 ##About
 Edinburgh is a 64-bit operating system designed for Intel CPUs,
 it requires very little resources however is fast and small by design.

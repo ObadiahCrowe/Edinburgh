@@ -1,8 +1,8 @@
 #ifndef KEYBOARD_H
 #define KEYBOARD_H
 
-#include "../video/video.h"
 #include "../../syscalls/ports.h"
+#include "../video/video.h"
 
 //string buffstr = '\0'; - to clear buffer
 string buffstr;

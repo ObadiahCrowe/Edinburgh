@@ -2,8 +2,9 @@
 #define SCREEN_H
 
 #include "../../../lib/string.h"
-#include "colours.h"
 #include "../../../lib/types.h"
+#include "../input/keyboard.h"
+#include "colours.h"
 
 /* Cursor variables */
 int cursor_X = 0;
@@ -90,7 +91,7 @@ void printChar(char ch) {
 			break;
 		default:
 			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth] = ch;
-			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth + 1] = BLACK_LIGHT_WHITE;
+			mem[(cursor_Y * scrnWdth + cursor_X) * scrnDpth + 1] = BLACK_WHITE;
 			cursor_X++;
 			break;
 	}
@@ -149,6 +150,26 @@ void printColour(string s, color col) {
 	for (i; i < len; i++) {
 		printCharColour(s[i], col);
 	}
+}
+
+void printGfxTest() {
+    buffstr = '\0';
+    printColour("", BLACK_BLACK);
+    printColour("", BLUE_BLACK);
+    printColour("", GREEN_BLACK);
+    printColour("", AQUA_BLACK);
+    printColour("", RED_BLACK);
+    printColour("", PURPLE_BLACK);
+    printColour("", BROWN_BLACK);
+    printColour("", GREY_BLACK);
+    printColour("", LIGHT_GREY_BLACK);
+    printColour("", LIGHT_BLUE_BLACK);
+    printColour("", LIGHT_GREEN_BLACK);
+    printColour("", LIGHT_AQUA_BLACK);
+    printColour("", LIGHT_RED_BLACK);
+    printColour("", LIGHT_PURPLE_BLACK);
+    printColour("", YELLOW_BLACK);
+    printColour("", WHITE_BLACK);
 }
 
 #endif

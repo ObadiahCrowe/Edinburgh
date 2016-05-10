@@ -4729,6 +4729,6 @@ set(SOURCE_FILES
     kernel.bin
     README.md
     run.sh
-    write.sh kernel/fault/pagefault.c)
+    write.sh kernel/fault/pagefault.c kernel/drivers/filesystems/filesystem.c)
 
 add_executable(Edinburgh ${SOURCE_FILES})

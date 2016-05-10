@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/kernel/boot/long_mode_init.asm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/syscalls/ports.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/power.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/filesystems/filesystem.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/video/video.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/video/colours.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/input/keyboard.h" isTestSource="false" />
