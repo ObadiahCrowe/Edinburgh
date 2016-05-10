@@ -36,10 +36,17 @@ void startCommandLine(string str) {
     printColour("roadmap", BLACK_GREEN);
     printColour(" | ", BLACK_GREY);
     printColour("Displays roadmap\n", BLACK_BLUE);
+
+    /* Shuts down the computer */
+    printColour("poweroff", BLACK_GREEN);
+    printColour(" | ", BLACK_GREY);
+    printColour("Powers the system off\n", BLACK_BLUE);
   } else if(compareString(str, "helloworld")) {
-    print("\nHello world!");
+      print("\nHello world!");
   } else if(compareString(str, "pagefault")) {
-    createPageFault();
+      createPageFault();
+  } else if(compareString(str, "poweroff")) {
+      killCPU();
   } else {
     printColour("\nThe command you entered is invalid, execute 'help' for help.\n", BLACK_LIGHT_RED);
   }
