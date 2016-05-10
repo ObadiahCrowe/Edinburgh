@@ -4,7 +4,7 @@
 #include "../../lib/types.h"
 #include "../syscalls/ports.h"
 
-void killCPU()
+void reboot()
 {
     /* Disable interrupts */
     __asm__ __volatile__ ("cli");

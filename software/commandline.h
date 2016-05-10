@@ -42,16 +42,16 @@ void startCommandLine(string str) {
         printColour(" | ", BLACK_GREY);
         printColour("Clears the screen\n", BLACK_BLUE);
 
-        /* Shuts down the computer */
-        printColour("poweroff", BLACK_GREEN);
+        /* Reboots the computer */
+        printColour("reboot", BLACK_GREEN);
         printColour(" | ", BLACK_GREY);
-        printColour("Powers the system off\n", BLACK_BLUE);
+        printColour("Reboots the system\n", BLACK_BLUE);
     } else if(compareString(str, "helloworld")) {
         print("\nHello world!");
     } else if(compareString(str, "pagefault")) {
         createPageFault();
-    } else if(compareString(str, "poweroff")) {
-        killCPU();
+    } else if(compareString(str, "reboot")) {
+        reboot();
     } else if(compareString(str, "clearscreen")) {
         clearScreen();
     } else if(compareString(str, "roadmap")) {
