@@ -1,5 +1,7 @@
 #include "../lib/string.h"
 #include "../software/commandline.h"
+#include "drivers/filesystems/filesystem.c"
+#include "drivers/input/keyboard.h"
 
 void kernel_main(void)
 {
@@ -9,6 +11,7 @@ void kernel_main(void)
 	printColour("64-bit.\n", BLACK_GREY);
 	printColour("Programmed by Obadiah Crowe", BLACK_GREEN);
 	printColour("\n\nCommand Line has been initialised!", BLACK_GREY);
+	listDisks();
 	while(true) {
 		printColour("\n>", BLACK_LIGHT_RED);
 		printColour(" ", BLACK_GREY);

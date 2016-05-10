@@ -29,7 +29,6 @@
       <sourceFolder url="file://$MODULE_DIR$/software/filemanager.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/software/textedit.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/software/commandline.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/software/calculator.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/run.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/obj/src/locale/iconv.lo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/obj/src/locale/pleval.lo" isTestSource="false" />
@@ -4628,7 +4627,7 @@
       <sourceFolder url="file://$MODULE_DIR$/libc/src/unistd/ttyname.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/dn_skipname.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/socketpair.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libc/src/network/hstrerror.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/libc/src/network/inet_legacy.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/getaddrinfo.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/if_indextoname.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/getservbyname_r.c" isTestSource="false" />
@@ -4639,7 +4638,7 @@
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/send.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/htonl.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/getpeername.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libc/src/network/gethostbyname2.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/libc/src/network/hstrerror.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/bind.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/getservbyport_r.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/if_nametoindex.c" isTestSource="false" />
@@ -4691,7 +4690,7 @@
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/getnameinfo.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/gethostbyname_r.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/recvfrom.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libc/src/network/inet_legacy.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/libc/src/network/gethostbyname2.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/accept.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/proto.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libc/src/network/ns_parse.c" isTestSource="false" />

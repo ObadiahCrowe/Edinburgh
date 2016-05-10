@@ -327,4 +327,5 @@ string readString() {
 		return buffstr + '\0';
 	}
 }
+
 #endif

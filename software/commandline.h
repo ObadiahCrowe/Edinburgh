@@ -56,9 +56,10 @@ void startCommandLine(string str) {
         clearScreen();
     } else if(compareString(str, "roadmap")) {
         printColour("\n==== RoadMap ====\n", BLACK_LIGHT_BLUE);
-        printColour("Add filesystem support\n", BLACK_GREEN);
+        printColour("Add FAT32 and Ext2 filesystem support\n", BLACK_GREEN);
         printColour("Add C++ support\n", BLACK_GREEN);
         printColour("Add network drivers\n", BLACK_GREEN);
+        printColour("Paging system", BLACK_GREEN);
     } else if(compareString(str, "gfxtest")) {
         printColour("\nThis is a work in progress and isn't fully fleshed out\n", BLACK_LIGHT_RED);
         printGfxTest();

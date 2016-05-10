@@ -11,7 +11,7 @@ set(SOURCE_FILES
     kernel/boot/linker.ld
     kernel/boot/long_mode_init.asm
     kernel/boot/multiboot_header.asm
-    kernel/drivers/input/keyboard.h
+        kernel/drivers/input/keyboard.h
     kernel/drivers/input/mouse.h
     kernel/drivers/video/colours.h
     kernel/drivers/video/video.h
@@ -4718,7 +4718,6 @@ set(SOURCE_FILES
     libc/README
     libc/VERSION
     libc/WHATSNEW
-    software/calculator.c
     software/commandline.h
     software/filemanager.h
     software/textedit.h
