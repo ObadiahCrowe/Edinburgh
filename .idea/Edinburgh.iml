@@ -12,6 +12,8 @@
       <sourceFolder url="file://$MODULE_DIR$/kernel/boot/grub/grub.cfg" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/boot/long_mode_init.asm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/syscalls/ports.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kernel/syscalls/interrupts.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/pci/pci.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/power.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/filesystems/filesystem.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/kernel/drivers/video/video.h" isTestSource="false" />

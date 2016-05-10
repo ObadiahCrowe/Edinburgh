@@ -13,8 +13,4 @@ void outPortB(unint16 _port, unint8 _data) {
 	__asm__ __volatile__("outb %1, %0" : : "dn" (_port), "a" (_data));
 }
 
-void sendInterrupt(unint8 _data) {
-	/* todo */
-}
-
 #endif

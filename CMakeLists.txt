@@ -4728,6 +4728,6 @@ set(SOURCE_FILES
     kernel.bin
     README.md
     run.sh
-    write.sh kernel/fault/pagefault.c kernel/drivers/filesystems/filesystem.c)
+    write.sh kernel/fault/pagefault.c kernel/drivers/filesystems/filesystem.c kernel/drivers/pci/pci.h kernel/syscalls/interrupts.h)
 
 add_executable(Edinburgh ${SOURCE_FILES})
