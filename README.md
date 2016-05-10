@@ -16,3 +16,6 @@ The goal is to build a fast and usable operating system with clear and structure
 Developers, please put all known bugs below so they can be fixed/worked on in an orderly manner
 
 * If screen is filled to bottom with text, it distorts
+
+##Screenshots
+![Basic commands][https://github.com/ObadiahCrowe/Edinburgh/raw/master/docs/img/basiccmds.png]
