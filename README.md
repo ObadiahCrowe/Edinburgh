@@ -15,4 +15,4 @@ The goal is to build a fast and usable operating system with clear and structure
 ##Known bugs
 Developers, please put all known bugs below so they can be fixed/worked on in an orderly manner
 
-*If screen is filled to bottom with text, it distorts
+* If screen is filled to bottom with text, it distorts
