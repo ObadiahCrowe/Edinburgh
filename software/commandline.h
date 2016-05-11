@@ -46,6 +46,11 @@ void startCommandLine(string str) {
         printColour("reboot", BLACK_GREEN);
         printColour(" | ", BLACK_GREY);
         printColour("Reboots the system\n", BLACK_BLUE);
+
+        /* Shuts down the computer */
+        printColour("poweroff", BLACK_GREEN);
+        printColour(" | ", BLACK_GREY);
+        printColour("Shuts down the system\n", BLACK_BLUE);
     } else if(compareString(str, "helloworld")) {
         print("\nHello world!");
     } else if(compareString(str, "pagefault")) {
@@ -64,6 +69,9 @@ void startCommandLine(string str) {
     } else if(compareString(str, "gfxtest")) {
         printColour("\nThis is a work in progress and isn't fully fleshed out\n", BLACK_LIGHT_RED);
         printGfxTest();
+    } else if(compareString(str, "poweroff")) {
+        printColour("\nMurdering the CPU..", BLACK_RED);
+        powerOff();
     } else {
         printColour("\nThe command you entered is invalid, execute 'help' for help.\n", BLACK_LIGHT_RED);
     }
