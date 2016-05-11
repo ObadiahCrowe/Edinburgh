@@ -40,11 +40,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/isofiles/boot/kernel.bin" afterPath="$PROJECT_DIR$/build/isofiles/boot/kernel.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kernel.bin" afterPath="$PROJECT_DIR$/build/kernel.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kernel.o" afterPath="$PROJECT_DIR$/build/kernel.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Edinburgh.iml" afterPath="$PROJECT_DIR$/.idea/Edinburgh.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/drivers/power.h" afterPath="$PROJECT_DIR$/kernel/drivers/power.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/syscalls/ports.h" afterPath="$PROJECT_DIR$/kernel/syscalls/ports.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/commandline.h" afterPath="$PROJECT_DIR$/software/commandline.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/drivers/video/video.h" afterPath="$PROJECT_DIR$/kernel/drivers/video/video.h" />
     </list>
     <ignored path="Edinburgh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commandline.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="commandline.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/software/commandline.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="799">
               <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
               <folding>
                 <element signature="e#39#65#0" expanded="true" />
@@ -119,14 +117,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="video.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kernel/drivers/video/video.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="93" column="84" selection-start-line="93" selection-start-column="84" selection-end-line="93" selection-end-column="84" />
+            <state relative-caret-position="309">
+              <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
               <folding>
                 <element signature="e#35#67#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="306">
+                <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -151,13 +162,11 @@
         <option value="$PROJECT_DIR$/kernel/drivers/filesystems/filesystem.c" />
         <option value="$PROJECT_DIR$/kernel/drivers/video/keyboard.h" />
         <option value="$PROJECT_DIR$/kernel/drivers/input/keyboard.h" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/kernel/drivers/video/colours.h" />
         <option value="$PROJECT_DIR$/kernel/drivers/filesystems/drives/drivemanager.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/kernel/drivers/pci/pci.asm" />
         <option value="$PROJECT_DIR$/kernel/drivers/pci/pci.h" />
-        <option value="$PROJECT_DIR$/kernel/drivers/video/video.h" />
         <option value="$PROJECT_DIR$/kernel/boot/grub/grub.cfg" />
         <option value="$PROJECT_DIR$/kernel/kernel.c" />
         <option value="$PROJECT_DIR$/kernel/syscalls/interrupts.h" />
@@ -165,6 +174,8 @@
         <option value="$PROJECT_DIR$/kernel/drivers/power.h" />
         <option value="$PROJECT_DIR$/kernel/syscalls/ports.h" />
         <option value="$PROJECT_DIR$/software/commandline.h" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/kernel/drivers/video/video.h" />
       </list>
     </option>
   </component>
@@ -175,9 +186,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-2" />
-    <option name="y" value="-2" />
+    <option name="y" value="18" />
     <option name="width" value="1370" />
-    <option name="height" value="772" />
+    <option name="height" value="752" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -269,6 +280,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="drivers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Edinburgh" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Edinburgh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kernel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drivers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,7 +567,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-2" width="1370" height="772" extended-state="0" />
+    <frame x="-2" y="18" width="1370" height="752" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -813,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/drivers/input/keyboard.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -903,16 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/drivers/video/video.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="93" column="84" selection-start-line="93" selection-start-column="84" selection-end-line="93" selection-end-column="84" />
-          <folding>
-            <element signature="e#35#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/syscalls/interrupts.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -929,6 +942,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/software/commandline.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+          <folding>
+            <element signature="e#39#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/syscalls/ports.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -937,12 +971,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/software/commandline.h">
+    <entry file="file://$PROJECT_DIR$/kernel/drivers/video/video.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+        <state relative-caret-position="309">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
           <folding>
-            <element signature="e#39#65#0" expanded="true" />
+            <element signature="e#35#67#0" expanded="true" />
           </folding>
         </state>
       </provider>

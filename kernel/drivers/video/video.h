@@ -47,18 +47,18 @@ void clearScreen() {
     updateCursor();
 }
 
-void scrollUp(unint8 lineNum) {
-    string mem = (string) 0xb8000;
+void scrollUp(unint8 lnNum) {
+    string vidmem = (string) 0xb8000;
     unint16 i = 0;
     for (i; i < scrnWdth * (scrnHght - 1) * scrnDpth; i++) {
-        mem[i] = mem[i + scrnHght * scrnDpth * lineNum];
+        vidmem[i] = vidmem[i + scrnWdth * scrnDpth * lnNum];
     }
-    clearLine(scrnHght - 1 - lineNum, scrnHght - 1);
-    if (cursor_Y - lineNum < 0) {
+    clearLine(scrnHght - 1 - lnNum, scrnHght - 1);
+    if (cursor_Y - lnNum < 0) {
         cursor_Y = 0;
         cursor_X = 0;
     } else {
-        cursor_Y -= lineNum;
+        cursor_Y -= lnNum;
     }
     updateCursor();
 }
