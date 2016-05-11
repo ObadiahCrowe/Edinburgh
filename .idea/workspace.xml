@@ -36,24 +36,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1c79a0e-b862-4cc7-bdf4-a0ea6af64281" name="Default" comment="pci fixes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kernel/drivers/pci/pci.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kernel/syscalls/interrupts.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Edinburgh-x86_64.iso" afterPath="$PROJECT_DIR$/Edinburgh-x86_64.iso" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/isofiles/boot/kernel.bin" afterPath="$PROJECT_DIR$/build/isofiles/boot/kernel.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kernel.bin" afterPath="$PROJECT_DIR$/build/kernel.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kernel.o" afterPath="$PROJECT_DIR$/build/kernel.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Edinburgh.iml" afterPath="$PROJECT_DIR$/.idea/Edinburgh.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/isofiles/boot/grub/grub.cfg" afterPath="$PROJECT_DIR$/build/isofiles/boot/grub/grub.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/boot/grub/grub.cfg" afterPath="$PROJECT_DIR$/kernel/boot/grub/grub.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/drivers/core/cpu.asm" afterPath="$PROJECT_DIR$/kernel/drivers/core/cpu.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/drivers/pci/pci.asm" afterPath="$PROJECT_DIR$/kernel/drivers/pci/pci.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/fault/pagefault.c" afterPath="$PROJECT_DIR$/kernel/fault/pagefault.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/kernel.c" afterPath="$PROJECT_DIR$/kernel/kernel.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/syscalls/ports.h" afterPath="$PROJECT_DIR$/kernel/syscalls/ports.h" />
     </list>
     <ignored path="Edinburgh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -184,9 +167,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-2" />
-    <option name="y" value="-2" />
-    <option name="width" value="1924" />
-    <option name="height" value="1084" />
+    <option name="y" value="18" />
+    <option name="width" value="1370" />
+    <option name="height" value="752" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -241,6 +224,7 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="GO_FMT" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DundeeFS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -492,10 +476,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-2" width="1924" height="1084" extended-state="0" />
+    <frame x="-2" y="18" width="1370" height="752" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -848,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
