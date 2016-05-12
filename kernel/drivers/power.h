@@ -20,13 +20,6 @@ void reboot()
 
 void powerOff()
 {
-    /* Disable interrupts */
-    __asm__ __volatile__ ("cli");
-    for(;;)
-    {
-        outPortW(0xB004, 0x2000);
-
-        __asm__ __volatile__ ("cli; hlt");
-    }
+  /* TODO */
 }
 #endif
