@@ -18,6 +18,7 @@ Developers, please put all known bugs below so they can be fixed/worked on in an
 * None atm :D
 
 ##Roadmap
+* Develop windowing system
 * Rework syscalls and drivers to integrate better with Assembly
 * Add FAT32 and Ext2 filesystem support
 * Integrate [DundeeFS](https://github.com/ObadiahCrowe/Dundee)
@@ -30,3 +31,5 @@ Developers, please put all known bugs below so they can be fixed/worked on in an
 
 ##Screenshots
 ![Basic commands](https://github.com/ObadiahCrowe/Edinburgh/raw/master/docs/img/basiccmds.png)
+
+![Windowing system](https://github.com/ObadiahCrowe/Edinburgh/raw/master/docs/img/windowingsystem.png)
